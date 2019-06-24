@@ -1,0 +1,39 @@
+.main-header class=(properties[:background_class])
+  .ui.container
+    .main-navigation.ui.menu
+      .main-header__logo.item
+        a.logo__link href=(logo[:link])
+          = image_tag logo[:src], alt: logo[:alt]
+      .ui.menu.navigation
+        - (properties[:navigation_items] || []).each do |navigation_item|
+          - if has_submenu?(navigation_item)
+            - submenu_items = navigation_item[:submenu_items]
+            - if navigation_item[:submenu_items_type].eql?('full_header')
+              .mega-dropdown.navigation__item
+                a.browse.item data-target=(navigation_item[:target]) href=(navigation_item[:url]) = navigation_item[:name]
+                .megamenu
+                  .ui.container(id=navigation_item[:target])
+                    .ui.three.column.relaxed.equal.height.top.aligned.stackable.grid
+                      - submenu_items.try(:each) do |submenu_item|
+                        - next if submenu_item[:path].present?
+                        .column
+                          h4.ui.header = submenu_item[:subtitle]
+                          .ui.link.list
+                            - submenu_item[:links].try(:each) do |link|
+                              a.item href=(link[:path]) = link[:name]
+            - else
+              .ui.simple.dropdown.item.navigation__item
+                a.item href=(navigation_item[:url]) = navigation_item[:name]
+                .menu
+                  - submenu_items.try(:each) do |submenu_item|
+                    - submenu_item[:links].try(:each) do |link|
+                      a.item href=(link[:path]) = link[:name]
+          - else
+            .navigation__item
+              a.item href=(navigation_item[:url]) = navigation_item[:name]
+      .ui.right.menu.user-menu
+        .user-menu__login.item
+          a href=(properties[:path_login]) = properties[:link_login]
+      a.item.mobile__trigger
+        |
+        = properties[:menu_name]

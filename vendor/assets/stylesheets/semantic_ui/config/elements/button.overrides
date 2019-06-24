@@ -1,0 +1,58 @@
+/*******************************
+         Site Overrides
+*******************************/
+@marine-hover: #0033ab;
+@marine-hover-shadow: #001c5e;
+@marine-blue: #0044dd;
+@marine-shadow: #0025c6;
+@pome-red: #e83819;
+@snow-white: #ffffff;
+@vibrant-hover: #dc4a30;
+@vibrant-hover-shadow: #b3463c;
+@vibrant-red: #f55335;
+
+.ui.button {
+  border-radius: 4px;
+  font-size: 16px;
+  transition: all 0s ease-out;
+}
+
+.ui.green.button {
+  box-shadow: 0 4px 0 0 #3eae49;
+}
+
+.ui.red.button {
+  background-color: @vibrant-red;
+  box-shadow: 0 4px 0 0 @pome-red;
+
+  &:active {
+    box-shadow: 0px 1px 0px 0px @vibrant-hover-shadow;
+    top: 3px;
+  }
+
+  &:hover {
+    background-color: @vibrant-hover;
+    box-shadow: 0 4px 0 0 @vibrant-hover-shadow;
+  }
+}
+
+.ui.blue.button {
+  background-color: @marine-blue;
+  box-shadow: 0 4px 0 0 @marine-shadow;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  text-align: center;
+  padding: 10px 24px;
+  color: @snow-white;
+
+  &:active {
+    box-shadow: 0px 1px 0px 0px @marine-hover-shadow;
+    top: 3px;
+  }
+
+  &:hover {
+    background-color: @marine-hover;
+    box-shadow: 0px 4px 0px 0px @marine-hover-shadow;
+  }
+}

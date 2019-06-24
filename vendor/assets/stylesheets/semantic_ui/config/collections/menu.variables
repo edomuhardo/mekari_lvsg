@@ -1,0 +1,11 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@background         : transparent;
+@border             : none;
+@boxShadow          : none;
+@borderRadius       : 0;
+@dividerSize        : 0;
+@margin             : 0;
+@dividerBackground  : transparent;

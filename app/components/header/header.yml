@@ -1,0 +1,80 @@
+-
+  :background_class: "blue-background"
+  :logo:
+    :src: https://mekari.com/wp-content/uploads/2019/03/logo-mekari.svg
+    :alt: "Mekari"
+    :link: "/"
+  :navigation_items:
+    - :name: "About Us"
+      :url: "/about_us"
+    - :name: "Products"
+      :url: "#"
+      :target: "menu-products"
+      :submenu_items:
+        - :links:
+            -
+              :name: 'Sleekr'
+              :path: '/submenu_1'
+            -
+              :name: 'Talenta'
+              :path: '/submenu_2'
+            -
+              :name: 'Jurnal'
+              :path: '/submenu_3'
+            -
+              :name: 'Klikpajak'
+              :path: '/submenu_3'
+      :submenu_items_type: ''
+    - :name: "Careers"
+      :url: "/careers"
+      :class: "careers"
+    - :name: "News"
+      :url: "/news"
+  :link_login: "Log In"
+  :path_login: "/login"
+
+-
+  :background_class: "marine-blue-background"
+  :logo:
+    :src: https://mekari.com/wp-content/uploads/2019/03/logo-mekari.svg
+    :alt: "Mekari"
+    :link: "/"
+  :navigation_items:
+    - :name: "Products"
+      :url: "#"
+      :target: "menu-products"
+      :submenu_items:
+        - :subtitle: 'Payroll Automation & HR Solution'
+          :links:
+            -
+              :name: 'Sleekr'
+              :path: '/submenu_1'
+            -
+              :name: 'Talenta'
+              :path: '/submenu_2'
+        - :subtitle: 'Accounting Software'
+          :links:
+            -
+              :name: 'Jurnal'
+              :path: '/submenu_3'
+        - :subtitle: 'Accounting Software'
+          :links:
+            -
+              :name: 'Tax Management Platform'
+              :path: '/submenu_4'
+      :submenu_items_type: 'full_header'
+    - :name: "Company"
+      :url: "#"
+      :submenu_items:
+        - :links:
+            -
+              :name: 'About Us'
+              :path: '/about_us'
+            -
+              :name: 'Careers'
+              :path: '/careers'
+            -
+              :name: 'News'
+              :path: '/news'
+  :link_login: "Log In"
+  :path_login: "/login"

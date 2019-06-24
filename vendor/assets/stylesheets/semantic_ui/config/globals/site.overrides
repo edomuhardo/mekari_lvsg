@@ -1,0 +1,14 @@
+/*******************************
+         Site Overrides
+*******************************/
+@smart-green: #5ccc5e;
+
+body {
+  font-size: 16px;
+}
+
+
+/* font color */
+.text.smart-green {
+  color: @smart-green !important;
+}

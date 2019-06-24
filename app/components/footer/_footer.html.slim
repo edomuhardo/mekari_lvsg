@@ -1,0 +1,35 @@
+.footer
+  .footer-top
+    .ui.container
+      .ui.divided.equal.height.stackable.grid
+        .footer-top__container.three.wide.column
+          .footer-top__logo
+            a.logo__link href=(properties[:footer_logo_link])
+              = image_tag properties[:footer_logo_path], alt: properties[:footer_logo_alt]
+
+        .footer-top__container.ten.wide.column
+          .footer-top__menu.ui.menu.horizontal.stackable
+            - (properties[:footer_nav_items] || []).each do |footer_nav_item|
+              .item
+                a href=(footer_nav_item[:url]) data-purpose=(footer_nav_item.dig(:data, :purpose))
+                  = footer_nav_item[:name]
+
+        .footer-top__container.three.wide.column
+          .footer-top__social
+            span.social__text = properties[:footer_social]
+            a.social__icon target="_blank" href=(properties[:footer_social_fb])
+              i.facebook.icon
+            a.social__icon target="_blank" href=(properties[:footer_social_tw])
+              i.twitter.square.icon
+
+  .footer-bottom
+    .ui.container
+      .ui.grid
+        .footer-bottom__text.sixteen.wide.column
+          | &copy; #{ Date.today.year }&nbsp;
+          = properties[:copyright]
+          a.footer-bottom__terms target="_blank" href=properties[:term_path]
+            = properties[:term_text]
+          = properties[:and]
+          a.footer-bottom__policy target="_blank" href=properties[:privacy_path]
+            = properties[:privacy_text]

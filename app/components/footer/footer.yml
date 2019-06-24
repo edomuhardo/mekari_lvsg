@@ -1,0 +1,21 @@
+-
+  :footer_logo_path: https://mekari.com/wp-content/uploads/2019/03/logo-mekari.svg
+  :footer_logo_alt: "Mekari"
+  :footer_logo_link: "Mekari"
+  :footer_nav_items:
+    - :name: 'About Us'
+      :url: '/about_us'
+    - :name: 'Products'
+      :url: '/products'
+    - :name: 'Careers'
+      :url: '/careers'
+    - :name: 'News'
+      :url: '/news'
+  :footer_social: "Follow us: "
+  :footer_social_fb: https://facebook.com
+  :footer_social_tw: https://twitter.com
+  :copyright: "PT Mid Solusi Nusantara. All rights reserved."
+  :term_path: "https://mekari.com/"
+  :term_text: "Terms of Use "
+  :privacy_path: "https://mekari.com/"
+  :privacy_text: "Privacy Policy"

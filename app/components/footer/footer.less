@@ -1,0 +1,150 @@
+@import "mekari_lvsg/ms_base/variables.less";
+
+.footer-top {
+  background-color: @true-blue;
+
+  @media only screen and (min-width: @computerBreakpoint) {
+    padding-top: 34px;
+    padding-bottom: 38px;
+  }
+
+  @media only screen and (max-width: @largestMobileScreen) {
+    padding: 2rem 0;
+  }
+
+  @media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+    padding: 50px 0;
+
+    &__social {
+      display: flex;
+    }
+  }
+
+  &__container {
+    padding: 1rem;
+
+    @media only screen and (max-width: @largestTabletScreen) {
+      width: 100%;
+    }
+  }
+
+  &__menu {
+    a {
+      color: @snow-white;
+      font-size: 16px;
+      font-weight: 600;
+
+      &:hover,
+      &:active {
+        color: @smart-green;
+      }
+    }
+
+    @media only screen and (max-width: @largestMobileScreen) {
+      &.ui.menu {
+        .item {
+          padding: 0 0 12px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+      &.ui.menu {
+        .item {
+          padding-top: 0;
+          padding-bottom: 0;
+
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    .social {
+      &__text {
+        color: @mercury-grey;
+        font-size: 16px;
+        font-weight: 300;
+        margin-right: 15px;
+      }
+      &__icon {
+        color: @snow-white;
+        font-size: 30px;
+        @media only screen and (min-width: @computerBreakpoint) {
+          position: relative;
+          top: 3px;
+        }
+        &.active,
+        &:hover {
+          color: @smart-green;
+        }
+      }
+    }
+
+    @media only screen and (max-width: @largestMobileScreen) {
+      display: flex
+    }
+
+    @media only screen and (min-width: @computerBreakpoint) {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: @dark-blue;
+  text-align: center;
+
+  &__text {
+    color: @mercury-grey;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+
+    a {
+      color: @snow-white;
+      font-weight: 600;
+      &:hover,
+      &:active {
+        color: @smart-green;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: @computerBreakpoint) {
+  .footer-bottom {
+    &__text {
+      margin-bottom: 20px;
+      margin-top: 8px;
+    }
+  }
+}
+
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+  .ui.grid {
+    .footer-bottom__text.column {
+      margin-bottom : 15px;
+    }
+  }
+
+  .footer-top {
+    .ui > .grid {
+      margin: 0;
+
+      .column {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

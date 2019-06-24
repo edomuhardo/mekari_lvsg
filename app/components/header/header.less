@@ -1,0 +1,132 @@
+@import "mekari_lvsg/ms_base/variables.less";
+
+.blue-background {
+  background-color: @true-blue;
+}
+
+.marine-blue-background {
+  background-color: @marine-blue;
+}
+
+.green-background {
+  background-color: @smart-green;
+}
+
+.main-header {
+  position: relative;
+
+  .ui.menu {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    height: 50px;
+
+    .item {
+      &.mobile__trigger {
+        color: @snow-white;
+        font-size: 16px;
+        font-weight: 600;
+        display: none;
+
+        &:hover {
+          color: @smart-green;
+        }
+
+        @media only screen and (max-width: @largestTabletScreen) {
+          display: flex;
+        }
+      }
+
+      a {
+        color: @snow-white;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+
+        &.active,
+        &:hover {
+          color: @smart-green;
+        }
+      }
+
+      .button {
+        &__signup {
+          padding: 3px 8px;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .navigation,
+    .user-menu .item {
+      @media only screen and (max-width: @largestTabletScreen) {
+        display: none;
+      }
+    }
+  }
+
+  .navigation {
+    &.menu {
+      .navigation__item {
+        a.item {
+          color: @snow-white;
+          font-size: 16px;
+          line-height: 20px;
+          padding-left: 24px;
+          padding-right: 24px;
+          &.active,
+          &:hover {
+            color: @smart-green;
+          }
+        }
+      }
+    }
+  }
+
+  .megamenu {
+    background-color: @snow-white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 24px;
+    display: none;
+    margin-top: 0;
+    z-index: 9;
+
+    .ui.header {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 12px;
+      color: @pepper-grey;
+    }
+
+    .ui.link.list {
+      margin-top: 0;
+
+      > .item {
+        font-size: 16px;
+        line-height: 20px;
+        color: @pepper-grey;
+        padding-bottom: 8px;
+        padding-left: 0;
+        font-weight: 300;
+        &:hover {
+          color: @shallow-blue;
+        }
+      }
+    }
+  }
+
+  .mega-dropdown {
+    &:hover {
+      > .megamenu {
+        display: block;
+      }
+    }
+  }
+
+  .logo__link {
+    max-height: 20px;
+  }
+}

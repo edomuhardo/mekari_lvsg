@@ -1,0 +1,21 @@
+@import 'mekari_lvsg/variables';
+
+body.pages {
+  background-color: $frosty-grey;
+  .headtitle {
+    @media (min-width: $computerBreakpoint) {
+      width: 62.5%;
+    }
+  }
+}
+
+footer {
+  background-color: $navy-blue;
+  color: $mercury-grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  a {
+    color: $snow-white;
+  }
+}

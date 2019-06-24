@@ -1,0 +1,37 @@
+// Grey
+$frosty-grey: #f1f1f1;
+$gradient-grey: #f7f7f7;
+$line-grey: #ebebeb;
+$mercury-grey: #ccc;
+$pepper-grey: #333;
+$slate-grey: #808080;
+
+// Blue
+$marine-blue: #04d;
+$navy-blue: #21364a;
+
+$epic-yellow: #ffd100;
+$snow-white: #fff;
+
+// Box shadow color
+$box-shadow-color: rgba(0, 0, 0, 0.07);
+$darker-box-shadow: 0 -2px 8px 0 rgba(0, 0, 0, 0.21);
+$darker-bottom-box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.21);
+
+// Green
+$promo-green: #f0faf0;
+$smart-green: #5ccc5e;
+$text-green: #55c05a;
+
+// Screen Size Breakpoints
+$mobileBreakpoint: 320px;
+$tabletBreakpoint: 768px;
+$computerBreakpoint: 992px;
+$largeMonitorBreakpoint: 1200px;
+$widescreenMonitorBreakpoint: 1920px;
+
+// Calculated Screen sizes
+$largestMobileScreen: ($tabletBreakpoint - 1px);
+$largestTabletScreen: ($computerBreakpoint - 1px);
+$largestSmallMonitor: ($largeMonitorBreakpoint - 1px);
+$largestLargeMonitor: ($widescreenMonitorBreakpoint - 1px);

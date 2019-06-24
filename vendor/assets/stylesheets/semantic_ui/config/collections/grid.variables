@@ -1,0 +1,7 @@
+/*******************************
+    User Variable Overrides
+*******************************/
+
+@dividedBorder: none;
+@stackableMobileBorder: 0;
+@stackableRowSpacing: 1rem;
