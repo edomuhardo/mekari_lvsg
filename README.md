@@ -1,6 +1,7 @@
 # MekariLvsg
 Sample living style guide by using mounting_view as an engine with semantic-ui.
-Mekari is just name of my current company, it's not related with company existing repository. 
+
+Mekari is just name of my current company, it's not related with company existing repository. So, it's free to use!!
 
 ## Usage
 How to use my plugin.
