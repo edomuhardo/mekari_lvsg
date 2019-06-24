@@ -1,5 +1,6 @@
 # MekariLvsg
-Short description and motivation.
+Sample living style guide by using mounting_view as an engine with semantic-ui.
+Mekari is just name of my current company, it's not related with company existing repository. 
 
 ## Usage
 How to use my plugin.
