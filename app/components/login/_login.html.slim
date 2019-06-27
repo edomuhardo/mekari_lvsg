@@ -1,0 +1,22 @@
+.ui.middle.aligned.center.aligned.grid
+  .column
+    h2.ui.teal.image.header
+      a.logo__link href=(properties[:login_logo_link])
+        = image_tag properties[:login_logo_path], alt: properties[:login_logo_alt]
+    .content
+      | Log-in to your account
+    form.ui.large.form
+      .ui.stacked.segment
+        .field
+          .ui.left.icon.input
+            i.user.icon
+            input name="email" placeholder=("E-mail address") type="text" /
+        .field
+          .ui.left.icon.input
+            i.lock.icon
+            input name="password" placeholder="Password" type="password" /
+        .ui.fluid.large.teal.submit.button Login
+      .ui.error.message
+    .ui.message
+      | New to us?
+      a href="#"  Sign Up

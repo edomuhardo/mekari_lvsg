@@ -1,7 +1,7 @@
 -
   :footer_logo_path: https://mekari.com/wp-content/uploads/2019/03/logo-mekari.svg
   :footer_logo_alt: "Mekari"
-  :footer_logo_link: "Mekari"
+  :footer_logo_link: "/"
   :footer_nav_items:
     - :name: 'About Us'
       :url: '/about_us'
